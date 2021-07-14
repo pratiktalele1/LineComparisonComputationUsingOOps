@@ -18,4 +18,6 @@ public class commonFunction {
 				);
 		return newLineLength;
 	}
+	
+	
 }

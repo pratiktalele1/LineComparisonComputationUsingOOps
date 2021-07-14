@@ -11,5 +11,8 @@ public class LineComparisonComputation {
 		
 		//checking for equality of two line
 		lineMeasureMent.equalLength();
+		
+		//comparing length of two lines
+		lineMeasureMent.compareLength();
 	}
 }

@@ -54,5 +54,66 @@ public class LineComparisonComputationChild extends LineComparisonComputationPar
 		
 		
 	}
+
+	//comparing length of two line
+	public void compareLength() {
+		
+		//first line input
+		logger.log(Level.INFO,"Enter 1st line cordinate- ");
+		logger.log(Level.INFO,"Enter line x1 cordinate- ");
+		pointX1 = commonFunction.getInput();
+		
+		logger.log(Level.INFO,"Enter line x2 cordinate- ");
+		pointX2 = commonFunction.getInput();
+		
+		logger.log(Level.INFO,"Enter line y1 cordinate- ");
+		pointY1 = commonFunction.getInput();
+		
+		logger.log(Level.INFO,"Enter line y2 cordinate- ");
+		pointY2 = commonFunction.getInput();
+		
+		// using Math.pow and Math.sqrt method
+		 double firstLineLength=commonFunction.lineMeasure(pointX1, pointX2, pointY1, pointY2);
+		//type casting from double to string 
+		String getUser1Input=firstLineLength+"";
+		
+		//second line input
+		logger.log(Level.INFO,"Enter 2nd line cordinate- ");
+		logger.log(Level.INFO,"Enter line x1 cordinate- ");
+		pointX1 = commonFunction.getInput();
+		
+		logger.log(Level.INFO,"Enter line x2 cordinate- ");
+		pointX2 = commonFunction.getInput();
+		
+		logger.log(Level.INFO,"Enter line y1 cordinate- ");
+		pointY1 = commonFunction.getInput();	
+		
+		logger.log(Level.INFO,"Enter line y2 cordinate- ");
+		pointY2 = commonFunction.getInput();
+		
+		// using Math.pow and Math.sqrt method
+		 double secondLineLength=commonFunction.lineMeasure(pointX1, pointX2, pointY1, pointY2);
+		//type casting from double to string 
+		String getUser2Input=secondLineLength+"";
+		
+		//compareTo method
+		double firstValue=(getUser1Input.compareTo(getUser2Input));
+		double secondValue=(getUser2Input.compareTo(getUser1Input));
+		
+		System.out.println("--------------------------------------");
+
+		if(firstValue>secondValue) {
+			System.out.println("first line is greater");
+		}
+		else { 
+			if(firstValue<secondValue){
+			System.out.println("second line is greater");
+			}else {
+				System.out.println("both first and second lines are equal");
+			}
+		}
+		System.out.println("--------------------------------------");
+
+	}
 	
 }
