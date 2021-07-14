@@ -8,5 +8,8 @@ public class LineComparisonComputation {
 		
 		//calling function for Uc1
 		lineMeasureMent.LengthOfLine();
+		
+		//checking for equality of two line
+		lineMeasureMent.equalLength();
 	}
 }
